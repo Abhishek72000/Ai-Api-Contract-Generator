@@ -57,14 +57,16 @@
             # test_locally("YOUR_COMMIT_HASH")  # Replace with your commit hash
 
 
-💡 How It Works
-    Change Detection: The system receives a webhook notification when code is pushed to the repository
-    API Analysis: It identifies controller files and extracts API methods using regex patterns
-    Documentation Generation: For each changed method, it generates documentation using the Mistral-7B LLM
-    Documentation Update: It creates or updates Markdown files with the generated documentation
+💡 How It Works:
+
+        Change Detection: The system receives a webhook notification when code is pushed to the repository
+        API Analysis: It identifies controller files and extracts API methods using regex patterns
+        Documentation Generation: For each changed method, it generates documentation using the Mistral-7B LLM
+        Documentation Update: It creates or updates Markdown files with the generated documentation
 
 
-📝 Documentation Format
+📝 Documentation Format:
+
     The system generates documentation with the following structure:
         #ControllerName API Documentation
     
@@ -83,7 +85,7 @@
         <!-- END_METHOD: MethodName -->
 
 
-⚙️ Configuration
+⚙️ Configuration :
 Adjust the following parameters in the .env file:
 
     REPO_PATH: Path to your git repository
